@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="landing page for personal website">
+	<meta name="keywords" content=" landing page website portfolio devweb">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<![endif]-->
+
+	<!-- Link fichier normalize -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Link CDN Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+	<!-- Link CSS perso -->
+	<link rel="stylesheet" type="text/css" href="css/SASS_import/style.css">
+
+	<!-- Ling Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- link pour le favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="" />
+	<title>Orélia Sokambi - Landing Page</title>
+</head>
+<body data-spy="scroll" data-target=".header">
+
+	<header class="header text-center container-fluid">
+		<div class="container">
+			<h1 class="animated slideInDown">Web developper in training</h1>
+			<h2 class="animated slideInDown">I'm French and live in Paris. I'm passionate about <span>web development</span>, <span>creation</span> and <span>webdesign</span>.
+	 		Always excited about <span>new project</span>, feel free to contact me !</h2>
+			<section class="header__social-media">
+				<a class="header__social-media__github" href="https://github.com/OreliaSk"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+				<a class="header__social-media__codepen" href="https://codepen.io/orelia_sk/#"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
+				<a class="header__social-media__linkedin" href="https://www.linkedin.com/in/or%C3%A9lia-sokambi-27a475111/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+				<a class="header__social-media__insta" href="https://www.instagram.com/oreliask/?hl=fr">
+					<img class="header__social-media__insta__img" src="img/main/instagram-whitepp.png" alt="instagram">
+				</a>
+				<div class="header__logo" >
+					<img class= "logo-bear img-responsive col-offset-2" src="img/header/bear-v2.jpg" alt="logo-bear">
+				</div>
+			</section>
+			<section class="header__button">
+				<button class="btn btn-custom">
+					<i class="fa fa-heart fa-3x" aria-hidden="true"></i>Like
+				</button>
+				<a href="#contact">
+					<button class="btn btn-custom">
+						<i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>Contact
+					</button>
+					</a>
+			</section>
+		</div> <!-- end container -->
+	</header> <!-- end header -->
+
+	<main class="main container-fluid">
+		<div class="container">
+			<h3 class="text-center animated slideInDown"">What I do</h3>
+			<hr>
+			<div class="main__laptop col-md-4 text-center">
+				<img src="img/main/laptop.svg" alt="laptop">
+				<p>Front-end</p>
+			</div>
+			<div class="main__database col-md-4 text-center">
+				<img src="img/main/database.svg" alt="database">
+				<p>Back-end</p>
+			</div>
+			<div class="main__settings col-md-4 text-center">
+				<img src="img/main/settings.svg" alt="settings">
+				<p>UI/UX Design</p>
+			</div>
+		</div> <!-- end container -->
+	</main> <!-- end main -->
+
+	<section class="bloc-contact container-fluid" id="contact">
+		<div class="container">
+			<h3 class="text-center animated slideInDown">Contact me</h3>
+			<hr>
+			<form action="https://formspree.io/orelia.sokambi@gmail.com" method="POST">
+				<div class="bloc-contact__contact1">
+					<div class="row">
+						<div class="bloc-contact__contact1__inputs col-md-6">
+							<div class="form-group">
+							    <input name="name" class="form-control" placeholder="Full Name" required>
+							</div>
+
+							<div class="form-group">
+								<input class="form-control" name="email" type="email"  placeholder="Email" required>
+							</div>
+
+							<select class="form-control" name="checkbox">
+								<option>How did you find me ?</option>
+								<option>By chance</option>
+								<option>By a friend</option>
+								<option>By a collegue</option>
+								<option>Via social network</option>
+							</select>
+						</div> <!-- bloc-contact__contact1__inputs -->
+					
+						<div class="bloc-contact__contact2__textarea col-md-6">
+							<textarea class="form-control" name="message" rows="4" cols="10" placeholder="Tapez votre message ici..."></textarea>
+						</div> <!-- bloc-contact__contact2__textarea -->
+					</div> <!-- end row -->
+				</div> <!-- end bloc-contact__contact1 -->
+
+				<div class="checkbox bloc-contact__contact2 text-center">
+				    <label>
+				      <input type="checkbox" name="checkbox-email"> I want to receive an email when the site will be online
+				    </label>
+				</div> <!-- bloc-contact__contact2 -->
+
+				<div class="button text-center">
+					<button class="btn btn-custom text-center" type="submit">Submit</button>
+				</div>
+
+			</form>
+		</div> <!-- end container -->
+		
+	</section> <!-- end bloc-contact -->
+
+	<footer class="footer text-center">
+		<p>Copyright © 2017 | Orélia Sokambi</p>
+		<!--  <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+	</footer>
+
+
+	<!-- script bootstrap/jQuery/React/Vue.js etc.-->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+	<!-- script perso -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

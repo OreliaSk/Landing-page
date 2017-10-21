@@ -1,0 +1,55 @@
+/***********************************************
+				VARIABLES
+***********************************************/
+$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+
+$white: #FDF9F0;
+$violet: #494DA2;
+$pink: #FF73B3;
+
+%title3 {
+	font-family: $montserrat;
+	font-size: 2.7rem;
+	padding-top: 30px;
+}
+
+/***********************************************
+				MIXINS
+***********************************************/
+/*avec animation*/
+@mixin animation($animation...) {
+  -webkit-animation: $animation;
+     -moz-animation: $animation;
+      -ms-animation: $animation;
+          animation: $animation;
+}
+
+/* avec border-radius*/
+@mixin radius($radius...) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*
+.[name_of-class] { @include radius(10px); }
+*/
+
+/*avec box-shadow*/
+@mixin boxShadow($shadow...){
+	-webkit-box-shadow: $shadow;
+	   -moz-box-shadow: $shadow;
+		-ms-box-shadow: $shadow;
+			box-shadow: $shadow;
+}
+
+/*avec les transitions*/
+@mixin transition($transition...){
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+		-ms-transition: $transition;
+			transition: $transition;
+}
+

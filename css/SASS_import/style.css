@@ -1,0 +1,144 @@
+/*Pour importer un fichier css contenu dans le meme dossier*/
+@import url(import.css);
+/***********************************************
+				VARIABLES
+***********************************************/
+main h3, .bloc-contact h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.7rem;
+  padding-top: 30px; }
+
+/***********************************************
+				MIXINS
+***********************************************/
+/*avec animation*/
+/* avec border-radius*/
+/*
+.[name_of-class] { @include radius(10px); }
+*/
+/*avec box-shadow*/
+/*avec les transitions*/
+/*************************************************************/
+/***********************    WRAPPER   ************************/
+/*************************************************************/
+.wrapper {
+  padding-top: 45px; }
+
+/*************************************************************/
+/***********************    HEADER   *************************/
+/*************************************************************/
+.header {
+  background-color: #494DA2;
+  box-shadow: 1px 2px 5px 1px;
+  padding-top: 47px;
+  padding-bottom: 42px; }
+  .header h1 {
+    color: #FDF9F0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem; }
+  .header h2 {
+    color: #FDF9F0;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    padding: 0 80px; }
+    .header h2 span {
+      color: #FF73B3;
+      font-weight: bold; }
+  .header .header__social-media {
+    margin-top: 35px;
+    margin-bottom: 35px; }
+    .header .header__social-media a {
+      color: #FDF9F0;
+      margin-left: 10px;
+      margin-right: 10px; }
+    .header .header__social-media .header__social-media__github:hover {
+      transition: all linear .3s;
+      color: rgba(0, 0, 0, 0.5); }
+    .header .header__social-media .header__social-media__codepen:hover {
+      color: rgba(0, 0, 0, 0.5);
+      transition: all linear .3s; }
+    .header .header__social-media .header__social-media__linkedin:hover {
+      color: rgba(44, 200, 239, 0.3);
+      transition: all linear .5s; }
+    .header .header__social-media .header__logo img.logo-bear {
+      height: 230px;
+      margin: auto;
+      opacity: .7;
+      width: 230px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+  .header .header__button .btn-custom {
+    background-color: #FF73B3;
+    color: #FDF9F0;
+    font-size: 1.8rem;
+    margin: 10px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+    -ms-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+    box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8); }
+    .header .header__button .btn-custom i {
+      margin-right: 5px; }
+  .header .header__social-media__insta img {
+    height: 60px;
+    padding-bottom: 22px;
+    width: 40px; }
+
+/*************************************************************/
+/************************    MAIN   **************************/
+/*************************************************************/
+main p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  /*font-weight: bold;*/
+  padding-top: 10px; }
+
+.main__laptop img, .main__database img, .main__settings img {
+  height: 60px;
+  width: 60px; }
+
+/*************************************************************/
+/****************    SECTION.BLOC-CONTACT   ******************/
+/*************************************************************/
+.bloc-contact form {
+  padding-top: 20px; }
+.bloc-contact h3 {
+  padding-top: 50px; }
+.bloc-contact section input[placeholder], .bloc-contact .form-control, .bloc-contact textarea[placeholder] {
+  font-size: 1.6rem;
+  padding: 6px; }
+.bloc-contact label {
+  font-size: 1.4rem;
+  padding: 6px; }
+.bloc-contact .bloc-contact__contact2 label {
+  font-size: 1.4rem; }
+.bloc-contact .btn {
+  background-color: #FF73B3;
+  color: #FDF9F0;
+  font-size: 2rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+  -moz-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+  -ms-box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8);
+  box-shadow: 0px 1px 12px 0px rgba(255, 115, 179, 0.8); }
+
+/*************************************************************/
+/***********************    FOOTER   *************************/
+/*************************************************************/
+.footer {
+  background-color: #494DA2;
+  color: #FDF9F0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 40px 0 20px 0; }
+
+/*# sourceMappingURL=style.css.map */
